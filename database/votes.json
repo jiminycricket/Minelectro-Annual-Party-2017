@@ -1,0 +1,28 @@
+{
+    "question1": {
+        "option1": 500,
+        "option2": 10
+    },
+    "question2": {
+        "option1": 401,
+        "option2": 120,
+        "option3": 330
+    },
+    "question3": {
+        "option1": 500,
+        "option2": 40,
+        "option3": 60,
+        "option4": 40,
+        "option5": 120
+    },
+    "question4": {
+        "option1": 10,
+        "option2": 63,
+        "option3": 14
+    },
+    "question5": {
+        "option1": 0,
+        "option2": 10,
+        "option3": 63
+    }
+}
