@@ -21,6 +21,7 @@ const app = express();
 app.engine('hbs', engines.handlebars);
 app.set('views', './views');
 app.set('view engine', 'hbs');
+app.use('/assets', express.static('assets'));
 
 app.get('/', (request, response) => {
     getQuestions().then(questions => {
@@ -30,7 +31,6 @@ app.get('/', (request, response) => {
 
 app.get('/api/questions', (request, response) => {
     getQuestions().then(questions => {
-        // response.render('index', { facts });
         response.json(questions);
     });
 });
