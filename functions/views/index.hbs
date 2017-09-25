@@ -1,11 +1,167 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>client</title>
-  <link href="/app/static/css/app.e487c68df2cc934ad577deb56d7c6903.css" rel="stylesheet"></head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  <script type="text/javascript" src="/app/static/js/manifest.81088d2cbc337b8132e0.js"></script><script type="text/javascript" src="/app/static/js/vendor.448f2d15e3f6731dd22b.js"></script><script type="text/javascript" src="/app/static/js/app.f9f173603886605ee0c8.js"></script></body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <title>client</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<link href="/app/static/css/app.8f94a572e700f285f89c17672433d72b.css" rel="stylesheet"></head>
+
+<body>
+  <script>
+    // window.question = '{{{ questions }}}';
+    // window.votes = '{{{ votes }}}';
+  </script>
+  <section class="content">
+    <h1 class="text-center">第一階段投票選項及狀況</h1>
+    <div class="question">
+      <h2 class="text-center">主舞台風格</h2>
+      <ul class="options">
+        <li class="option" data-option-id="option-1-1">
+          <img src="http://via.placeholder.com/350x350" alt="option1">
+          <p>description</p>
+        </li>
+        <li class="option" data-option-id="option-1-2">
+          <img src="http://via.placeholder.com/350x350" alt="option1">
+          <p>description</p>
+        </li>
+      </ul>
+      <div class="chart">
+        <span class="option-counter" data-option-id="option-1-1"></span>
+        <span class="option-counter" data-option-id="option-1-2"></span>
+      </div>
+    </div>
+    <div class="question">
+      <h2 class="text-center">現場票價</h2>
+      <ul class="options">
+        <li class="option" data-option-id="option-2-1">
+          <img src="http://via.placeholder.com/350x350" alt="option1">
+          <p>description</p>
+        </li>
+        <li class="option" data-option-id="option-2-2">
+          <img src="http://via.placeholder.com/350x350" alt="option1">
+          <p>description</p>
+        </li>
+        <li class="option" data-option-id="option-2-3">
+          <img src="http://via.placeholder.com/350x350" alt="option1">
+          <p>description</p>
+        </li>
+      </ul>
+      <div class="chart">
+        <span class="option-counter" data-option-id="option-2-1"></span>
+        <span class="option-counter" data-option-id="option-2-2"></span>
+        <span class="option-counter" data-option-id="option-2-3"></span>
+      </div>
+    </div>
+  </section>
+  <section class="content">
+    <h1 class="text-center">第二階段投票選項及狀況</h1>
+    <div class="question">
+      <h2 class="text-center">周邊設施</h2>
+      <ul class="options">
+        <li class="option" data-option-id="option-3-1">
+          <img src="http://via.placeholder.com/350x350" alt="option1">
+          <p>description</p>
+        </li>
+        <li class="option" data-option-id="option-3-2">
+          <img src="http://via.placeholder.com/350x350" alt="option2">
+          <p>description</p>
+        </li>
+        <li class="option" data-option-id="option-3-3">
+          <img src="http://via.placeholder.com/350x350" alt="option2">
+          <p>description</p>
+        </li>
+        <li class="option" data-option-id="option-3-4">
+          <img src="http://via.placeholder.com/350x350" alt="option2">
+          <p>description</p>
+        </li>
+        <li class="option" data-option-id="option-3-5">
+          <img src="http://via.placeholder.com/350x350" alt="option2">
+          <p>description</p>
+        </li>
+      </ul>
+      <div class="chart">
+        <span class="option-counter" data-option-id="option-3-1"></span>
+        <span class="option-counter" data-option-id="option-3-2"></span>
+        <span class="option-counter" data-option-id="option-3-3"></span>
+        <span class="option-counter" data-option-id="option-3-4"></span>
+        <span class="option-counter" data-option-id="option-3-5"></span>
+      </div>
+    </div>
+    <div class="question">
+        <h2 class="text-center">環境風格</h2>
+        <ul class="options">
+          <li class="option" data-option-id="option-4-1">
+            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <p>description</p>
+          </li>
+          <li class="option" data-option-id="option-4-2">
+            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <p>description</p>
+          </li>
+          <li class="option" data-option-id="option-4-3">
+            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <p>description</p>
+          </li>
+        </ul>
+        <div class="chart">
+          <span class="option-counter" data-option-id="option-4-1"></span>
+          <span class="option-counter" data-option-id="option-4-2"></span>
+          <span class="option-counter" data-option-id="option-4-3"></span>
+        </div>
+      </div>
+  </section>
+  <section class="content">
+      <h1 class="text-center">第三階段投票選項及狀況</h1>
+      <div class="question">
+        <h2 class="text-center">酒水價格</h2>
+        <ul class="options">
+          <li class="option" data-option-id="option-5-1">
+            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <p>description</p>
+          </li>
+          <li class="option" data-option-id="option-5-2">
+            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <p>description</p>
+          </li>
+          <li class="option" data-option-id="option-5-3">
+            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <p>description</p>
+          </li>
+        </ul>
+        <div class="chart">
+          <span class="option-counter" data-option-id="option-5-1"></span>
+          <span class="option-counter" data-option-id="option-5-2"></span>
+          <span class="option-counter" data-option-id="option-5-3"></span>
+        </div>
+      </div>
+      <div class="question">
+          <h2 class="text-center">加碼方案</h2>
+          <ul class="options">
+            <li class="option" data-option-id="option-6-1">
+              <img src="http://via.placeholder.com/350x350" alt="option1">
+              <p>description</p>
+            </li>
+            <li class="option" data-option-id="option-6-2">
+              <img src="http://via.placeholder.com/350x350" alt="option2">
+              <p>description</p>
+            </li>
+          </ul>
+          <div class="chart">
+            <span class="option-counter" data-option-id="option-6-1"></span>
+            <span class="option-counter" data-option-id="option-6-2"></span>
+          </div>
+        </div>
+    </section>
+
+  <!-- built files will be auto injected -->
+<script type="text/javascript" src="/app/static/js/manifest.6f4d55c8a0bc55f8ff1b.js"></script><script type="text/javascript" src="/app/static/js/vendor.29a6a3190c3f29b54b4b.js"></script><script type="text/javascript" src="/app/static/js/app.72fc96ed486dc19d7831.js"></script></body>
+
 </html>

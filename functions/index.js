@@ -5,16 +5,16 @@ const engines = require('consolidate');
 // const cors = require('cors')({origin: true});
 
 const firebaseApp = firebase.initializeApp(
-    functions.config().firebase
+  functions.config().firebase
 );
 
 function getQuestions() {
-    const ref = firebaseApp.database().ref('questions');
-    return ref.once('value').then(snap => snap.val());
+  const ref = firebaseApp.database().ref('questions');
+  return ref.once('value').then(snap => snap.val());
 }
 function getVotes() {
-    const ref = firebaseApp.database().ref('votes');
-    return ref.once('value').then(snap => snap.val());
+  const ref = firebaseApp.database().ref('votes');
+  return ref.once('value').then(snap => snap.val());
 }
 
 const app = express();
@@ -24,21 +24,24 @@ app.set('view engine', 'hbs');
 app.use('/static', express.static('views/static'));
 
 app.get('/', (request, response) => {
-    getQuestions().then(questions => {
-        response.render('index');
+  getVotes().then(votes => {
+    response.render('index', {
+      questions: JSON.stringify(questions),
+      votes: JSON.stringify(votes)
     });
+  });
 });
 
 app.get('/api/questions', (request, response) => {
-    getQuestions().then(questions => {
-        response.json(questions);
-    });
+  getQuestions().then(questions => {
+    response.json(questions);
+  });
 });
 
 app.get('/api/votes', (request, response) => {
-    getVotes().then(votes => {
-        response.json(votes);
-    });
+  getVotes().then(votes => {
+    response.json(votes);
+  });
 });
 
 exports.app = functions.https.onRequest(app);

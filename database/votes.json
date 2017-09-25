@@ -1,28 +1,20 @@
 {
-    "question1": {
-        "option1": 500,
-        "option2": 10
-    },
-    "question2": {
-        "option1": 401,
-        "option2": 120,
-        "option3": 330
-    },
-    "question3": {
-        "option1": 500,
-        "option2": 40,
-        "option3": 60,
-        "option4": 40,
-        "option5": 120
-    },
-    "question4": {
-        "option1": 10,
-        "option2": 63,
-        "option3": 14
-    },
-    "question5": {
-        "option1": 0,
-        "option2": 10,
-        "option3": 63
-    }
+   "option_1_1": 12,
+   "option_1_2": 2,
+   "option_2_1": 1,
+   "option_2_2": 22,
+   "option_2_3": 43,
+   "option_3_1": 64,
+   "option_3_2": 53,
+   "option_3_3": 12,
+   "option_3_4": 543,
+   "option_3_5": 93,
+   "option_4_1": 23,
+   "option_4_2": 90,
+   "option_4_3": 44,
+   "option_5_1": 32,
+   "option_5_2": 21,
+   "option_5_3": 43,
+   "option_6_1": 3,
+   "option_6_2": 4
 }

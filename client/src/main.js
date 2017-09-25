@@ -1,15 +1,16 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue';
-import App from './App';
-import router from './router';
+import './scss/style.scss';
+import $ from 'jquery';
+import votes from '../../database/votes.json';
+import chart from './service/chart';
 
-Vue.config.productionTip = false;
+window.votes = window.votes ? JSON.parse(window.votes) : votes;
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  template: '<App/>',
-  components: { App },
-});
+$(document).ready(() => {
+  console.log(window.votes);
+  chart.getOptions(".chart[data-question='question_1']")
+  chart.getOptions(".chart[data-question='question_2']")
+  chart.getOptions(".chart[data-question='question_3']")
+  chart.getOptions(".chart[data-question='question_4']")
+  chart.getOptions(".chart[data-question='question_5']")
+  chart.getOptions(".chart[data-question='question_6']")
+})
