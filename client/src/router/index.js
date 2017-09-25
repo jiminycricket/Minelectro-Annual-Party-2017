@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Hello from '@/components/Hello';
+import Home from '@/components/page/Home';
+import Vote from '@/components/page/Vote';
+import Success from '@/components/page/Success';
 
 Vue.use(Router);
 
@@ -8,8 +10,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello,
+      name: 'Home',
+      component: Home,
+    },
+    {
+      path: '/vote',
+      name: 'Vote',
+      component: Vote,
+    },
+    {
+      path: '/success',
+      name: 'Success',
+      component: Success,
     },
   ],
 });
