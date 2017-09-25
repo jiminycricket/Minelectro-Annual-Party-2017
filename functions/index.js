@@ -21,7 +21,7 @@ const app = express();
 app.engine('hbs', engines.handlebars);
 app.set('views', './views');
 app.set('view engine', 'hbs');
-app.use('/assets', express.static('assets'));
+app.use('/static', express.static('views/static'));
 
 app.get('/', (request, response) => {
     getQuestions().then(questions => {
