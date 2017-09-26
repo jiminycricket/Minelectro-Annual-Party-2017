@@ -1,0 +1,43 @@
+.question {
+  .options {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      background: white;
+      box-sizing: border-box;
+      padding: 25px;
+      list-style: none;
+      width: 300px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.chart {
+  display: flex;
+  width: 100%;
+  .option-counter {
+    height: 30px;
+    display: inline-block;
+    &:nth-child(1) {
+      color: #f123;
+      background-color: #123;
+    }
+    &:nth-child(2) {
+      background-color: #157EE7;
+    }
+    &:nth-child(3) {
+      background-color: #dd3;
+    }
+    &:nth-child(4) {
+      background-color: #4ff;
+    }
+    &:nth-child(5) {
+      background-color: #f34;
+    }
+  }
+}
