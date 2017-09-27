@@ -2,3 +2,17 @@
   max-width: 1140px;
   margin: 0 auto;
 }
+
+.flex {
+  display: flex
+}
+
+.felx-center-container {
+  align-items: center;
+  flex-flow: column;
+}
+
+
+.pad-100 {
+  padding: 100px;
+}

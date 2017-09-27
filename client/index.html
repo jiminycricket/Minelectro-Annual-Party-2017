@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
 
   <title>client</title>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,58 +20,112 @@
     // window.question = '{{{ questions }}}';
     // window.votes = '{{{ votes }}}';
   </script>
+  <div class="background background-1"></div>
+  <div class="background background-2"></div>
+  <div class="background background-3"></div>
+  <div class="background background-4"></div>
+  <div class="background background-5"></div>
+  <div class="background background-6"></div>
+  <div class="background background-7"></div>
+  <div class="background background-8"></div>
+  <div class="background background-9"></div>
+  <div class="background background-10"></div>
+  <div class="background background-11"></div>
+  <div class="background background-12"></div>
+  <div class="background background-13"></div>
+  <div class="background background-14"></div>
+  <div class="background background-15"></div>
+  <div class="background background-16"></div>
+  <div class="background background-17"></div>
+  <div class="background background-18"></div>
+  <div class="background background-19"></div>
+  <div class="background background-20"></div>
   <header class="text-center">
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#voteModal">
-      我要投票
-    </button>
+    <div class="header-wrapper">
+      <img class="wording-2" src="./static/image/wording-2.svg" alt="wording">
+      <img class="wording-3" src="./static/image/wording-3.svg" alt="wording">
+      <img class="wording-4" src="./static/image/wording-4.svg" alt="wording">
+      <img class="wording-5" src="./static/image/wording-5.svg" alt="wording">
+      <img class="wording-7" src="./static/image/wording-7.svg" alt="wording">
+      <button type="button" class="btn-square btn-vote" data-toggle="modal" data-target="#voteModal">
+        我要投票
+      </button>
+    </div>
   </header>
+  <section class="intro flex felx-center-container pad-100">
+    <h1>
+      這裡要不要有點文字講說民生派對是個什麼樣的活動，為什麼這次要投票，然後順便導購
+    </h1>
+    <button type="button" class="btn-square">
+      順便導購
+    </button>
+  </section>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h1 class="text-center">目前已經有 324 人決定了派對的走向</h1>
+  <h1 class="text-center">來看看他們的選擇</h1>
   <div class="content-result">
-    <section class="content">
-      <h1 class="text-center">第一階段投票選項及狀況</h1>
-      <div class="question">
-        <h2 class="text-center">主舞台風格</h2>
-        <ul class="options">
-          <li class="option" data-option-id="option_1_1">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>description</p>
-          </li>
-          <li class="option" data-option-id="option_1_2">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>description</p>
-          </li>
-        </ul>
-        <div class="chart" data-question="question_1">
-          <span class="option-counter" data-option-id="option_1_1"></span>
-          <span class="option-counter" data-option-id="option_1_2"></span>
+    <div class="statge-wrapper">
+      <img class="decorate-1" src="./static/image/artboard-9.png">
+      <section class="content statge statge-1">
+        <div class="title">
+          <span></span>
+          <h1>第一階段投票選項及狀況</h1>
+          <span></span>
         </div>
-      </div>
-      <div class="question">
-        <h2 class="text-center">現場票價</h2>
-        <ul class="options">
-          <li class="option" data-option-id="option_2_1">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>description</p>
-          </li>
-          <li class="option" data-option-id="option_2_2">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>description</p>
-          </li>
-          <li class="option" data-option-id="option_2_3">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>description</p>
-          </li>
-        </ul>
-        <div class="chart" data-question="question_2">
-          <span class="option-counter" data-option-id="option_2_1"></span>
-          <span class="option-counter" data-option-id="option_2_2"></span>
-          <span class="option-counter" data-option-id="option_2_3"></span>
+        <div class="question">
+          <h2 class="text-center">主舞台風格</h2>
+          <p class="text-center">總該給我一點文字講這是在投什麼吧</p>
+          <ul class="options">
+            <li class="option" data-option-id="option_1_1">
+              <img src="http://via.placeholder.com/350x350" alt="option1">
+              <p>title1</p>
+              <p>description</p>
+            </li>
+            <li class="option" data-option-id="option_1_2">
+              <img src="http://via.placeholder.com/350x350" alt="option1">
+              <p>title2</p>
+              <p>description</p>
+            </li>
+          </ul>
+          <div class="chart" data-question="question_1">
+            <div class="option-counter" data-option-id="option_1_1"><span>選項A</span></div>
+            <div class="option-counter" data-option-id="option_1_2"><span>選項B</span></div>
+          </div>
         </div>
+        <div class="question">
+          <h2 class="text-center">現場票價</h2>
+          <p class="text-center">總該給我一點文字講這是在投什麼吧</p>
+          <ul class="options">
+            <li class="option" data-option-id="option_2_1">
+              <img src="http://via.placeholder.com/350x350" alt="option1">
+              <p>description</p>
+            </li>
+            <li class="option" data-option-id="option_2_2">
+              <img src="http://via.placeholder.com/350x350" alt="option1">
+              <p>description</p>
+            </li>
+            <li class="option" data-option-id="option_2_3">
+              <img src="http://via.placeholder.com/350x350" alt="option1">
+              <p>description</p>
+            </li>
+          </ul>
+          <div class="chart" data-question="question_2">
+            <span class="option-counter" data-option-id="option_2_1"><span>選項A</span></span>
+            <span class="option-counter" data-option-id="option_2_2"><span>選項B</span></span>
+            <span class="option-counter" data-option-id="option_2_3"><span>選項C</span></span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="content statge statge-2">
+      <div class="title">
+        <span></span>
+        <h1>第二階段投票選項及狀況</h1>
+        <span></span>
       </div>
-    </section>
-    <section class="content">
-      <h1 class="text-center">第二階段投票選項及狀況</h1>
       <div class="question">
         <h2 class="text-center">周邊設施</h2>
+        <p class="text-center">總該給我一點文字講這是在投什麼吧</p>
         <ul class="options">
           <li class="option" data-option-id="option_3_1">
             <img src="http://via.placeholder.com/350x350" alt="option1">
@@ -95,15 +149,16 @@
           </li>
         </ul>
         <div class="chart" data-question="question_3">
-          <span class="option-counter" data-option-id="option_3_1"></span>
-          <span class="option-counter" data-option-id="option_3_2"></span>
-          <span class="option-counter" data-option-id="option_3_3"></span>
-          <span class="option-counter" data-option-id="option_3_4"></span>
-          <span class="option-counter" data-option-id="option_3_5"></span>
+          <span class="option-counter" data-option-id="option_3_1"><span>選項A</span></span>
+          <span class="option-counter" data-option-id="option_3_2"><span>選項B</span></span>
+          <span class="option-counter" data-option-id="option_3_3"><span>選項C</span></span>
+          <span class="option-counter" data-option-id="option_3_4"><span>選項D</span></span>
+          <span class="option-counter" data-option-id="option_3_5"><span>選項E</span></span>
         </div>
       </div>
       <div class="question">
         <h2 class="text-center">環境風格</h2>
+        <p class="text-center">總該給我一點文字講這是在投什麼吧</p>
         <ul class="options">
           <li class="option" data-option-id="option_4_1">
             <img src="http://via.placeholder.com/350x350" alt="option1">
@@ -119,14 +174,18 @@
           </li>
         </ul>
         <div class="chart" data-question="question_4">
-          <span class="option-counter" data-option-id="option_4_1"></span>
-          <span class="option-counter" data-option-id="option_4_2"></span>
-          <span class="option-counter" data-option-id="option_4_3"></span>
+          <span class="option-counter" data-option-id="option_4_1"><span>選項A</span></span>
+          <span class="option-counter" data-option-id="option_4_2"><span>選項B</span></span>
+          <span class="option-counter" data-option-id="option_4_3"><span>選項C</span></span>
         </div>
       </div>
     </section>
-    <section class="content">
-      <h1 class="text-center">第三階段投票選項及狀況</h1>
+    <section class="content statge statge-3">
+      <div class="title">
+        <span></span>
+        <h1>第三階段投票選項及狀況</h1>
+        <span></span>
+      </div>
       <div class="question">
         <h2 class="text-center">酒水價格</h2>
         <ul class="options">
@@ -144,9 +203,9 @@
           </li>
         </ul>
         <div class="chart" data-question="question_5">
-          <span class="option-counter" data-option-id="option_5_1"></span>
-          <span class="option-counter" data-option-id="option_5_2"></span>
-          <span class="option-counter" data-option-id="option_5_3"></span>
+          <span class="option-counter" data-option-id="option_5_1"><span>選項A</span></span>
+          <span class="option-counter" data-option-id="option_5_2"><span>選項B</span></span>
+          <span class="option-counter" data-option-id="option_5_3"><span>選項C</span></span>
         </div>
       </div>
       <div class="question">
@@ -162,27 +221,37 @@
           </li>
         </ul>
         <div class="chart" data-question="question_6">
-          <span class="option-counter" data-option-id="option_6_1"></span>
-          <span class="option-counter" data-option-id="option_6_2"></span>
+          <span class="option-counter" data-option-id="option_6_1"><span>選項A</span></span>
+          <span class="option-counter" data-option-id="option_6_2"><span>選項B</span></span>
         </div>
       </div>
     </section>
   </div>
-
-
-
-
-
-
-
-
+  <section class="flex text-center tickets">
+    <h1>想參加由你決定的派對嗎？</h1>
+    <a class="btn-square" href="#" target="_blank">點此贊助</a>
+  </section>
+  <footer>
+    <div class="flex text-center logo">
+      <span></span>
+      <img src="./static/image/wording-6.svg" alt="">
+      <span></span>
+    </div>
+    <div class="links">
+      <a href="https://www.facebook.com/minelectroinc/?ref=br_rs" target="_blank">民生電氣</a>
+      <a href="https://www.facebook.com/events/1382027685223368/?acontext=%7B%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22page%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22page_upcoming_events_card%5C%22%2C%5C%22extra_data%5C%22%3A[]%7D]%22%2C%22has_source%22%3Atrue%7D"
+        target="_blank">民生派對 2017</a>
+      <a href="#" target="_blank">flyingv 民生派對募資</a>
+    </div>
+  </footer>
 
 
 
 
 
   <!-- Modal -->
-  <div class="modal content-vote fade" id="voteModal" tabindex="-1" role="dialog" data-backdrop="false" aria-labelledby="voteModalLabel" show="true">
+  <div class="modal content-vote fade" id="voteModal" tabindex="-1" role="dialog" data-backdrop="false" aria-labelledby="voteModalLabel"
+    show="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -291,6 +360,29 @@
     </div>
   </div>
 
+
+
+
+
+
+
+
+
+  <div class="modal content-success fade" id="successModal" tabindex="-1" role="dialog" data-backdrop="false" aria-labelledby="successModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="successModalLabel">投票成功</h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="ga-success btn btn-primary">關閉</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- built files will be auto injected -->
 </body>
 

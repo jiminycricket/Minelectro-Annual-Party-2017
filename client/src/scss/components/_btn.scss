@@ -1,0 +1,14 @@
+.btn-square {
+  background-color: transparent;
+  font-size: 30px;
+  border-radius: 0;
+  border: 5px solid $white;
+  padding: 20px 50px;
+  letter-spacing: 10px;
+  color: $white;
+  transition: .5s;
+  &:hover {
+    border-color: $yellow;
+    color: $yellow;
+  }
+}

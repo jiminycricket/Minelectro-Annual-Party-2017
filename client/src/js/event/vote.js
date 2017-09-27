@@ -1,4 +1,6 @@
 import { questionsArray } from '../const/questions';
+import { postVotes } from '../service/api';
+import { toggleSuccessModal } from './success'
 const $ = window.$;
 
 const init = () => {
@@ -18,8 +20,17 @@ const optionEvent = (question) => {
   });
 };
 
+const offSubmit = () => {
+  $('.js-send-votes').off('click');
+}
+
+const toggleVoteModal = () => {
+  $('#voteModal').modal('toggle');
+}
+
 const submit = () => {
   $('.js-send-votes').on('click', () => {
+    offSubmit();
     const voteOptions = questionsArray.map((question) => {
       return $(`.option[data-vote-question=${question}].active`).attr('data-option-id');
     }).filter((option) => {
@@ -27,7 +38,10 @@ const submit = () => {
     });
 
     if (voteOptions.length === questionsArray.length) {
-      alert("sned");
+      toggleVoteModal();
+      toggleSuccessModal();
+      postVotes(voteOptions).then(() => {
+      });
     };
   })
 }
