@@ -10,9 +10,12 @@
     "scss": "node-sass src/scss/style.scss static/style.css -w",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
-    "postbuild": "npm run rename && npm run copy",
-    "copy": "cp -r ./dist/ ../functions/views/",
-    "rename": "mv ./dist/index.html ../functions/views/index.hbs"
+    "clean": "rm -rf ../functions/views/*.hbs && rm -rf ../functions/views/static/*",
+    "postbuild": "npm run insert && npm run rename && npm run copy",
+    "copy": "cp -r ./dist/static/ ../functions/views/static/",
+    "insert": "node insert.js",
+    "rename": "cp ./dist/index.html ../functions/views/index.hbs",
+    "deploy": "firebase deploy --only  functions"
   },
   "dependencies": {
     "jquery": "^3.2.1",
@@ -57,7 +60,8 @@
     "webpack-bundle-analyzer": "^2.2.1",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "write": "^1.0.3"
   },
   "engines": {
     "node": ">= 4.0.0",
