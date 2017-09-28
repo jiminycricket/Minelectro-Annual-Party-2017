@@ -5,15 +5,14 @@ const $ = window.$;
 const singleSelect = ["question_1", "question_2", "question_4", "question_5", "question_6"];
 const fourSlectTwo = ["question_3"];
 const init = () => {
-  // $('#voteModal').on('show.bs.modal', (e) => {
-    singleSelect.forEach((question) => {
-      optionSingleEvent(question);
-    });
-    fourSlectTwo.forEach((question) => {
-      optionfourSlectTwoEvent(question);
-    });
-    submit();
-  // });
+  toggleVoteModal();
+  singleSelect.forEach((question) => {
+    optionSingleEvent(question);
+  });
+  fourSlectTwo.forEach((question) => {
+    optionfourSlectTwoEvent(question);
+  });
+  submit();
 }
 
 const optionfourSlectTwoEvent = (question) => {
@@ -49,7 +48,6 @@ const toggleVoteModal = () => {
 
 const submit = () => {
   $('.js-send-votes').on('click', () => {
-    offSubmit();
     questionsArray
     const voteOptions = questionsArray.map((question) => {
       return $(`.option[data-vote-question=${question}].active`).attr('data-option-id');

@@ -9,11 +9,10 @@
     "dev:vote": "node build/dev-server.js --vote",
     "scss": "node-sass src/scss/style.scss static/style.css -w",
     "start": "node build/dev-server.js",
-    "build": "node build/build.js && node build/build.js --vote",
-    "postbuild": "npm run clean && npm run copy && npm run rename",
-    "clean": "rm -rf ../functions/views/*",
+    "build": "node build/build.js",
+    "postbuild": "npm run rename && npm run copy",
     "copy": "cp -r ./dist/ ../functions/views/",
-    "rename": "mv ../functions/views/index.html ../functions/views/index.hbs"
+    "rename": "mv ./dist/index.html ../functions/views/index.hbs"
   },
   "dependencies": {
     "jquery": "^3.2.1",
