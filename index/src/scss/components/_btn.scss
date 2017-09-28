@@ -1,0 +1,37 @@
+.btn-square {
+  background-color: transparent;
+  font-size: 30px;
+  border-radius: 0;
+  border: 5px solid $white;
+  padding: 20px 50px;
+  letter-spacing: 10px;
+  color: $white;
+  transition: .5s;
+  &:hover {
+    border-color: $yellow;
+    color: $yellow;
+  }
+}
+
+.btn {
+  border-radius: 0;
+  padding: 10px 30px;
+  background: transparent;
+  border: 1px solid $green;
+  color: $green;
+  font-size: 18px;
+  transition: .3s;
+  &:hover {
+    color: $white;
+    background: $yellow;
+    border: 1px solid $yellow;
+  }
+}
+.btn-default {
+  background: $white;
+  &:hover, &:active, &:focus {
+    color: $white;
+    background: $light-green;
+    border: 1px solid $light-green;
+  }
+}

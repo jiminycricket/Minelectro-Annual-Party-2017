@@ -1,0 +1,32 @@
+body {
+  font-family: 'PingFang TC', 'Helvetica Neue';
+  overflow-x: hidden;
+}
+
+a {
+  color: $white;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 100;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  width: 6%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient($green, $light-green, $orange, $yellow);
+}
+
+@for $i from 1 through 20 {
+  .background-#{$i} {
+    left: ($i - 1) * 5%;
+    height: 300% - (($i - 1) * 10%);
+    top: -100% + (($i - 1) * 5%);
+  }
+}
