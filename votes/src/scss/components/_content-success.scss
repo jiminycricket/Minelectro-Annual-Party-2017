@@ -1,0 +1,53 @@
+.content-success {
+  background: rgba($white, .7);
+
+  .modal-dialog {
+    width: 90%;
+    margin: 30px auto;
+    height: 90%;
+  }
+
+  .modal-content {
+    border-radius: 0;
+    border: 3px solid $white;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    min-height: 100%;
+    background: linear-gradient(0deg, rgba($green, 1), rgba($light-green, 1), rgba($yellow, 1), rgba($orange, 1));
+    box-shadow: none;
+  }
+
+  h4 {
+    color: $white;
+    font-size: 35px;
+  }
+
+  .modal-footer {
+    border: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+
+  .modal-body {
+    min-height: 300px;
+    padding: 50px;
+    font-size: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    text-align: center;
+    .btn-square {
+      cursor: pointer;
+      margin-top: 30px;
+      &:hover {
+        color: $green;
+        border-color: $green;
+      }
+    }
+  }
+}

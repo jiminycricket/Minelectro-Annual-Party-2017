@@ -1,5 +1,14 @@
 .question {
-  margin: 150px 0 200px;
+  padding: 50px 0 70px;
+}
+.question-title {
+  font-size: 50px;
+}
+.question-subtitle {
+  font-size: 20px;
+  color: lighten($gray, 20%);
+  max-width: 800px;
+  margin: 30px auto;
 }
 .options {
   padding: 0;
@@ -11,15 +20,27 @@
     box-sizing: border-box;
     padding: 20px;
     list-style: none;
-    width: 300px;
+    width: 330px;
     margin: 10px 20px;
     img {
       width: 100%;
     }
     p {
-      font-size: 14px;
-      color: $green;
+      font-size: 16px;
+      color: darken($gray, 30%);
       margin-top: 20px;
     }
   }
+}
+
+
+.question-transition {
+  height: 300px;
+  width: 50px;
+  margin: 0 auto;
+  // background: $gradient;
+  // background-image: url("/static/image/artboard-4.png");
+  position: relative;
+  background-size: 100%;
+
 }

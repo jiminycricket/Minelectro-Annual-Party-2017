@@ -14,8 +14,11 @@
     // background-image: url("/static/image/artboard-6.png");
     span {
       position: absolute;
-      left: -5px;
+      left: 100%;
       bottom: 100%;
+      width: 150px;
+      margin-left: -10px;
+
       margin-bottom: 5px;
       color: $white;
       font-size: 16px;

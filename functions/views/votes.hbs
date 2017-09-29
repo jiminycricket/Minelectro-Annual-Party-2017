@@ -13,178 +13,195 @@
   <title>client</title>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
-<link href="/app/static/css/app.9857b39cba36cfa9488b189c05f2add3.css" rel="stylesheet"></head>
+<link href="/app/static/css/app.aec5d7de70c0161785bf66eed44b2346.css" rel="stylesheet"></head>
 
 <body>
   <script>
     window.votes = '{{{ votes }}}';
   </script>
-  <div class="background background-1"></div>
-  <div class="background background-2"></div>
-  <div class="background background-3"></div>
-  <div class="background background-4"></div>
-  <div class="background background-5"></div>
-  <div class="background background-6"></div>
-  <div class="background background-7"></div>
-  <div class="background background-8"></div>
-  <div class="background background-9"></div>
-  <div class="background background-10"></div>
-  <div class="background background-11"></div>
-  <div class="background background-12"></div>
-  <div class="background background-13"></div>
-  <div class="background background-14"></div>
-  <div class="background background-15"></div>
-  <div class="background background-16"></div>
-  <div class="background background-17"></div>
-  <div class="background background-18"></div>
-  <div class="background background-19"></div>
-  <div class="background background-20"></div>
-  <header class="text-center">
-    <div class="header-wrapper">
-      <button type="button" class="btn-square btn-vote" data-toggle="modal" data-target="#voteModal">
-        我要投票
-      </button>
+  <div class="background-wrapper">
+    <div class="background background-1"></div>
+    <div class="background background-2"></div>
+    <div class="background background-3"></div>
+    <div class="background background-4"></div>
+    <div class="background background-5"></div>
+    <div class="background background-6"></div>
+    <div class="background background-7"></div>
+    <div class="background background-8"></div>
+    <div class="background background-9"></div>
+    <div class="background background-10"></div>
+    <div class="background background-11"></div>
+    <div class="background background-12"></div>
+    <div class="background background-13"></div>
+    <div class="background background-14"></div>
+    <div class="background background-15"></div>
+    <div class="background background-16"></div>
+    <div class="background background-17"></div>
+    <div class="background background-18"></div>
+    <div class="background background-19"></div>
+    <div class="background background-20"></div>
+  </div>
+  <div class="content">
+    <h1 class="title text-center">由你決定派對的走向！</h1>
+    <div class="content-vote-wording">
+      <h2>投票注意事項：</h2>
+      投票內容共 6 大項，投票者將可以決定：<br><br> 舞台風格、周邊設施、環境風格、酒水價格、現場票價、加碼方案。<br>
+      <br> 持有選票者，將一次選完所有投票內容，而每當募資金額超過門檻，我們便會執行新的投票內容。 詳情可見 <a src="" target="_blank">民生派對2017 FlyingV 募資專頁</a>。
     </div>
-  </header>
-  <!-- Modal -->
-  <div class="modal content-vote fade" id="voteModal" tabindex="-1" role="dialog" data-backdrop="false" aria-labelledby="voteModalLabel" data-show="true" data-keyboard="false">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title text-center" id="voteModalLabel">投出你的一票</h1>
-        </div>
-        <div class="modal-body">
-          <p class="content-vote-wording">
-            投票內容共 6 大項，投票者將可以決定：<br> 舞台風格、周邊設施、環境風格、酒水價格、現場票價、加碼方案。
-            <br> 持有選票者，將一次選完所有投票內容，而每當募資金額超過門檻，我們便會執行新的投票內容。 詳情可見 <a src="" target="_blank">民生派對2017 FlyingV 募資專頁</a>。
-          </p>
-          <span class="content-notice text-center">
-            請注意：所有內容皆需投票才可以按下送出鍵，投票序號為一次性使用，選擇完成並送出後便無法更改。
-          </span>
-          <div class="question">
-            <h2 class="text-center">主舞台風格 (二選一)</h2>
-            <ul class="options">
-              <li class="option active" data-vote-question="question_1" data-option-id="option_1_1">
-                <img src="http://via.placeholder.com/350x350" alt="option1">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-              <li class="option" data-vote-question="question_1" data-option-id="option_1_2">
-                <img src="http://via.placeholder.com/350x350" alt="option1">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-            </ul>
-            <h2 class="text-center">環境風格 (三選一)</h2>
-            <ul class="options">
-              <li class="option" data-vote-question="question_2" data-option-id="option_2_1">
-                <img src="http://via.placeholder.com/350x350" alt="option1">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-              <li class="option" data-vote-question="question_2" data-option-id="option_2_2">
-                <img src="http://via.placeholder.com/350x350" alt="option2">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-              <li class="option" data-vote-question="question_2" data-option-id="option_2_3">
-                <img src="http://via.placeholder.com/350x350" alt="option2">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-            </ul>
-            <h2 class="text-center">周邊設施 (四選二)</h2>
-            <ul class="options">
-              <li class="option" data-vote-question="question_3" data-option-id="option_3_1">
-                <img src="http://via.placeholder.com/350x350" alt="option1">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-              <li class="option" data-vote-question="question_3" data-option-id="option_3_2">
-                <img src="http://via.placeholder.com/350x350" alt="option2">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-              <li class="option" data-vote-question="question_3" data-option-id="option_3_3">
-                <img src="http://via.placeholder.com/350x350" alt="option2">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-              <li class="option" data-vote-question="question_3" data-option-id="option_3_4">
-                <img src="http://via.placeholder.com/350x350" alt="option2">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-            </ul>
-            <h2 class="text-center">酒水價格</h2>
-            <ul class="options">
-              <li class="option" data-vote-question="question_4" data-option-id="option_4_1">
-                <img src="http://via.placeholder.com/350x350" alt="option1">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-              <li class="option" data-vote-question="question_4" data-option-id="option_4_2">
-                <img src="http://via.placeholder.com/350x350" alt="option2">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-              <li class="option" data-vote-question="question_4" data-option-id="option_4_3">
-                <img src="http://via.placeholder.com/350x350" alt="option2">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-            </ul>
-            <h2 class="text-center">現場票價 (三選一)</h2>
-            <ul class="options">
-              <li class="option" data-vote-question="question_5" data-option-id="option_5_1">
-                <img src="http://via.placeholder.com/350x350" alt="option1">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-              <li class="option" data-vote-question="question_5" data-option-id="option_5_2">
-                <img src="http://via.placeholder.com/350x350" alt="option1">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-              <li class="option" data-vote-question="question_5" data-option-id="option_5_3">
-                <img src="http://via.placeholder.com/350x350" alt="option1">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-            </ul>
-            <h2 class="text-center">加碼方案</h2>
-            <ul class="options">
-              <li class="option" data-vote-question="question_6" data-option-id="option_6_1">
-                <img src="http://via.placeholder.com/350x350" alt="option1">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-              <li class="option" data-vote-question="question_6" data-option-id="option_6_2">
-                <img src="http://via.placeholder.com/350x350" alt="option2">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-              <li class="option" data-vote-question="question_6" data-option-id="option_6_3">
-                <img src="http://via.placeholder.com/350x350" alt="option1">
-                <p>大約十的字左右八九十大約十的字左右八九十</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="js-send-votes btn btn-primary">送出</button>
-        </div>
+    <span class="content-notice text-center">
+        請注意：所有內容皆需投票才可以按下送出鍵，投票序號為一次性使用，選擇完成並送出後便無法更改。
+      </span>
+    <div class="question">
+      <div class="question-item">
+        <h2 class="text-center">主舞台風格 (二選一)</h2>
+        <p class="text-center question-intro">介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字</p>
+        <ul class="options">
+          <li class="option active" data-vote-question="question_1" data-option-id="option_1_1">
+            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+          <li class="option" data-vote-question="question_1" data-option-id="option_1_2">
+            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+        </ul>
       </div>
+      <div class="question-item">
+        <h2 class="text-center">環境風格 (三選一)</h2>
+        <p class="text-center question-intro">介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字</p>
+
+        <ul class="options">
+          <li class="option" data-vote-question="question_2" data-option-id="option_2_1">
+            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+          <li class="option" data-vote-question="question_2" data-option-id="option_2_2">
+            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+          <li class="option" data-vote-question="question_2" data-option-id="option_2_3">
+            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+        </ul>
+      </div>
+      <div class="question-item">
+        <h2 class="text-center">周邊設施 (四選二)</h2>
+        <p class="text-center question-intro">介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字</p>
+
+        <ul class="options options-two-layer">
+          <li class="option" data-vote-question="question_3" data-option-id="option_3_1">
+            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+          <li class="option" data-vote-question="question_3" data-option-id="option_3_2">
+            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+          <li class="option" data-vote-question="question_3" data-option-id="option_3_3">
+            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+          <li class="option" data-vote-question="question_3" data-option-id="option_3_4">
+            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+        </ul>
+      </div>
+      <div class="question-item">
+        <h2 class="text-center">酒水價格</h2>
+        <p class="text-center question-intro">介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字</p>
+
+        <ul class="options">
+          <li class="option" data-vote-question="question_4" data-option-id="option_4_1">
+            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+          <li class="option" data-vote-question="question_4" data-option-id="option_4_2">
+            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+          <li class="option" data-vote-question="question_4" data-option-id="option_4_3">
+            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+        </ul>
+      </div>
+      <div class="question-item">
+        <h2 class="text-center">現場票價 (三選一)</h2>
+        <p class="text-center question-intro">介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字</p>
+
+        <ul class="options">
+          <li class="option" data-vote-question="question_5" data-option-id="option_5_1">
+            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+          <li class="option" data-vote-question="question_5" data-option-id="option_5_2">
+            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+          <li class="option" data-vote-question="question_5" data-option-id="option_5_3">
+            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+        </ul>
+      </div>
+      <div class="question-item">
+        <h2 class="text-center">加碼方案</h2>
+        <p class="text-center question-intro">介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字</p>
+
+        <ul class="options">
+          <li class="option" data-vote-question="question_6" data-option-id="option_6_1">
+            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+          <li class="option" data-vote-question="question_6" data-option-id="option_6_2">
+            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+          <li class="option" data-vote-question="question_6" data-option-id="option_6_3">
+            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <p>大約十的字左右八九十大約十的字左右八九十</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="vote-btn-wrapper">
+      <div class="js-send-votes vote-btn">我選好了！</div>
     </div>
   </div>
 
 
 
 
-
-
-
-
-
-  <div class="modal content-success fade" id="successModal" tabindex="-1" role="dialog" data-backdrop="false" aria-labelledby="successModalLabel">
+  <div class="modal content-success fade" data-keyboard="false" id="successModal" tabindex="-1" role="dialog" data-backdrop="false" aria-labelledby="successModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="successModalLabel">投票成功</h4>
+          <h4 class="modal-title text-center" id="successModalLabel">你的選擇我們收到了！</h4>
         </div>
         <div class="modal-body">
+          <p>恭喜您投票成功，後續請密切注意民生電氣粉絲團，我們會陸續公佈最新結果及相關訊息！</p>
+          <a class="btn-square">去看投票結果</a>
         </div>
         <div class="modal-footer">
-          <button type="button" data-dismiss="modal" class="ga-success btn btn-primary">關閉</button>
+          <footer>
+            <div class="flex text-center logo">
+              <span></span>
+              <img src="./static/image/wording-6.svg" alt="">
+              <span></span>
+            </div>
+            <div class="links">
+              <a href="https://www.facebook.com/minelectroinc/?ref=br_rs" target="_blank">民生電氣</a>
+              <a href="https://www.facebook.com/events/1382027685223368/?acontext=%7B%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22page%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22page_upcoming_events_card%5C%22%2C%5C%22extra_data%5C%22%3A[]%7D]%22%2C%22has_source%22%3Atrue%7D" target="_blank">民生派對 2017</a>
+              <a href="#" target="_blank">flyingv 民生派對募資</a>
+            </div>
+          </footer>
         </div>
       </div>
     </div>
   </div>
   <!-- built files will be auto injected -->
-<script type="text/javascript" src="/app/static/js/manifest.c7f9b25016aaccb1cfb3.js"></script><script type="text/javascript" src="/app/static/js/vendor.c577c84fadba21379dc9.js"></script><script type="text/javascript" src="/app/static/js/app.1ed9ef4fb5a8117161da.js"></script></body>
+<script type="text/javascript" src="/app/static/js/manifest.062fabf82fa3f38c174c.js"></script><script type="text/javascript" src="/app/static/js/vendor.c577c84fadba21379dc9.js"></script><script type="text/javascript" src="/app/static/js/app.4cd1ba4a2e939f8df602.js"></script></body>
 
 </html>
