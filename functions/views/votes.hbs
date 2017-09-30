@@ -9,11 +9,14 @@
   <meta name="author" content="">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" crossorigin="anonymous">
 
-  <title>client</title>
+  <title>民生派對 2017 "這次我們一起完成" | 投票頁面</title>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
-<link href="/app/static/css/app.aec5d7de70c0161785bf66eed44b2346.css" rel="stylesheet"></head>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<link href="/app/static/css/app.613bdeaae9abbeac3713b3bcfbc1ad52.css" rel="stylesheet"></head>
 
 <body>
   <script>
@@ -52,116 +55,123 @@
         請注意：所有內容皆需投票才可以按下送出鍵，投票序號為一次性使用，選擇完成並送出後便無法更改。
       </span>
     <div class="question">
-      <div class="question-item">
+      <div class="question-item input-wrapper">
+        <h2> 請輸入你的 flyingV 金流單號： </h2>
+        <input class="input" type="password" name="" value="">
+      </div>
+    </div>
+    <div class="question">
+      <div id="question-1" class="question-item">
         <h2 class="text-center">主舞台風格 (二選一)</h2>
-        <p class="text-center question-intro">介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字</p>
+        <p class="text-center question-intro">聊到 Daft Punk 經典的 2007 LIVE in coachella，就一定會想到那經典的金字塔造型舞台，因為主舞台是一個派對裡，除了音樂，我們最容易注目的地方，所以這次民生派對2017的主舞台風格，當然是由我們一起決定！我們提供了下列兩種風格供你選擇</p>
         <ul class="options">
-          <li class="option active" data-vote-question="question_1" data-option-id="option_1_1">
+          <li class="option" data-vote-question="question_1" data-option-id="option_1_1">
             <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">從缺</p>
           </li>
           <li class="option" data-vote-question="question_1" data-option-id="option_1_2">
             <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">從缺</p>
           </li>
         </ul>
       </div>
-      <div class="question-item">
+      <div id="question-2" class="question-item">
         <h2 class="text-center">環境風格 (三選一)</h2>
-        <p class="text-center question-intro">介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字</p>
+        <p class="text-center question-intro">在 2015 年的民生派對 #1 裡，最讓大家印象深刻的想必是舞池旁的花花草草，這次我們當然也花了很多心思在舞池旁的環境風格！我們提供了下列三種風格供你選擇，但要小心自己許下的願望...
+        </p>
 
         <ul class="options">
           <li class="option" data-vote-question="question_2" data-option-id="option_2_1">
             <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">倉庫風</p>
           </li>
           <li class="option" data-vote-question="question_2" data-option-id="option_2_2">
             <img src="http://via.placeholder.com/350x350" alt="option2">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">和室風</p>
           </li>
           <li class="option" data-vote-question="question_2" data-option-id="option_2_3">
-            <img src="http://via.placeholder.com/350x350" alt="option2">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <img src="http://via.placeholder.com/350x350" alt="option3">
+            <p class="question-subtitle">里民中心風（我們真的會給你里民中心）</p>
           </li>
         </ul>
       </div>
-      <div class="question-item">
+      <div id="question-3" class="question-item">
         <h2 class="text-center">周邊設施 (四選二)</h2>
-        <p class="text-center question-intro">介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字</p>
+        <p class="text-center question-intro">一個派對，能讓耳朵稍微休息一下的周邊設施也是很重要的，除了市集以外，來看看我們提供了什麼樣的選擇</p>
 
         <ul class="options options-two-layer">
           <li class="option" data-vote-question="question_3" data-option-id="option_3_1">
             <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">扭蛋機<br>內含各種派對小驚喜，轉了絕對物超所值</p>
           </li>
           <li class="option" data-vote-question="question_3" data-option-id="option_3_2">
             <img src="http://via.placeholder.com/350x350" alt="option2">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">乒乓桌<br>當然不是一般的桌子，玩了會上癮的那種</p>
           </li>
           <li class="option" data-vote-question="question_3" data-option-id="option_3_3">
             <img src="http://via.placeholder.com/350x350" alt="option2">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">飛鏢機<br>百發百中派對神射手，不用到酒吧就能玩</p>
           </li>
           <li class="option" data-vote-question="question_3" data-option-id="option_3_4">
             <img src="http://via.placeholder.com/350x350" alt="option2">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">樂透機<br>休息一下買個好運氣，各種大獎定時抽出</p>
           </li>
         </ul>
       </div>
-      <div class="question-item">
+      <div id="question-4" class="question-item">
         <h2 class="text-center">酒水價格</h2>
-        <p class="text-center question-intro">介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字</p>
+        <p class="text-center question-intro">很簡單，你希望用多少錢買到酒？也是由你決定！</p>
 
         <ul class="options">
           <li class="option" data-vote-question="question_4" data-option-id="option_4_1">
             <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">一罐 100</p>
           </li>
           <li class="option" data-vote-question="question_4" data-option-id="option_4_2">
             <img src="http://via.placeholder.com/350x350" alt="option2">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">一罐 120</p>
           </li>
           <li class="option" data-vote-question="question_4" data-option-id="option_4_3">
             <img src="http://via.placeholder.com/350x350" alt="option2">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">一罐 150</p>
           </li>
         </ul>
       </div>
-      <div class="question-item">
+      <div id="question-5" class="question-item">
         <h2 class="text-center">現場票價 (三選一)</h2>
-        <p class="text-center question-intro">介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字</p>
+        <p class="text-center question-intro">你希望當天才決定要來的朋友們，用多少錢買到門票？要鼓勵還是獎勵，派對最大權利也轉交給你！</p>
 
         <ul class="options">
           <li class="option" data-vote-question="question_5" data-option-id="option_5_1">
             <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">800 元</p>
           </li>
           <li class="option" data-vote-question="question_5" data-option-id="option_5_2">
             <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">1000 元</p>
           </li>
           <li class="option" data-vote-question="question_5" data-option-id="option_5_3">
             <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">1200 元</p>
           </li>
         </ul>
       </div>
-      <div class="question-item">
+      <div id="question-6" class="question-item">
         <h2 class="text-center">加碼方案</h2>
-        <p class="text-center question-intro">介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字，介紹文字</p>
+        <p class="text-center question-intro">最後，很重要的，如果這場派對能夠吸引到很多的人，為了表示我們深刻的感謝，我們希望給你們更多內容！看是要加開一天，還是每個人再多送一杯酒，由你們決定！</p>
 
         <ul class="options">
           <li class="option" data-vote-question="question_6" data-option-id="option_6_1">
             <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">主派對活動加開第二天<br> (12/1 星期五)</p>
           </li>
           <li class="option" data-vote-question="question_6" data-option-id="option_6_2">
             <img src="http://via.placeholder.com/350x350" alt="option2">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">主派對活動加開第二天<br> (12/3 星期日)</p>
           </li>
           <li class="option" data-vote-question="question_6" data-option-id="option_6_3">
             <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p>大約十的字左右八九十大約十的字左右八九十</p>
+            <p class="question-subtitle">所有購票者加贈酒水一份</p>
           </li>
         </ul>
       </div>
@@ -202,6 +212,6 @@
     </div>
   </div>
   <!-- built files will be auto injected -->
-<script type="text/javascript" src="/app/static/js/manifest.062fabf82fa3f38c174c.js"></script><script type="text/javascript" src="/app/static/js/vendor.c577c84fadba21379dc9.js"></script><script type="text/javascript" src="/app/static/js/app.4cd1ba4a2e939f8df602.js"></script></body>
+<script type="text/javascript" src="/app/static/js/manifest.f46b01c6e21be9fb7cdb.js"></script><script type="text/javascript" src="/app/static/js/vendor.6b6aa3eda4a89b345215.js"></script><script type="text/javascript" src="/app/static/js/app.371e85ca64dd76676432.js"></script></body>
 
 </html>

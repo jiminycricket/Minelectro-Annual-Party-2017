@@ -20,38 +20,37 @@ const validation = () => {
     toastr.info('未填入或錯誤： flyingV 金流單號');
     return false
   }
-  const ValidateOptions = [{
-    question: 1,
-    length: 1,
-    text: '主舞台風格',
-  },{
-    question: 2,
-    length: 1,
-    text: '環境風格',
-  },{
-    question: 3,
-    length: 2,
-    text: '周邊設施',
-  },{
-    question: 4,
-    length: 1,
-    text: '酒水價格',
-  },{
-    question: 5,
-    length: 1,
-    text: '現場票價',
-  },{
-    question: 6,
-    length: 1,
-    text: '加碼方案',
-  }];
-  ValidateOptions.forEach((ValidateOption) => {
-    if ($(`.option[data-vote-question=question_${ValidateOption.question}].active`).length < ValidateOption.length) {
-      toastr.info(`${ValidateOption.text} 還沒選完喔`);
-      $.scrollTo(`#question-${ValidateOption.question}`, 500);
-      return;
-    }
-  })
+
+  if ($(`.option[data-vote-question=question_1].active`).length < 1) {
+    toastr.info(`主舞台風格 還沒選完喔`);
+    $.scrollTo(`#question-1`, 500);
+    return false;
+  }
+  if ($(`.option[data-vote-question=question_2].active`).length < 1) {
+    toastr.info(`環境風格 還沒選完喔`);
+    $.scrollTo(`#question-2`, 500);
+    return false;
+  }
+  if ($(`.option[data-vote-question=question_3].active`).length < 2) {
+    toastr.info(`周邊設施 還沒選完喔`);
+    $.scrollTo(`#question-3`, 500);
+    return false;
+  }
+  if ($(`.option[data-vote-question=question_4].active`).length < 1) {
+    toastr.info(`酒水價格 還沒選完喔`);
+    $.scrollTo(`#question-4`, 500);
+    return false;
+  }
+  if ($(`.option[data-vote-question=question_5].active`).length < 1) {
+    toastr.info(`現場票價 還沒選完喔`);
+    $.scrollTo(`#question-5`, 500);
+    return false;
+  }
+  if ($(`.option[data-vote-question=question_6].active`).length < 1) {
+    toastr.info(`加碼方案 還沒選完喔`);
+    $.scrollTo(`#question-6`, 500);
+    return false;
+  }
   return true;
 
 }

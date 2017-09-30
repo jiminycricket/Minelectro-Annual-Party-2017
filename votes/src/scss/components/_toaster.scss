@@ -1,0 +1,11 @@
+#toast-container>div {
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 18px;
+  background: $orange;
+  opacity: 0.9;
+}
+#toast-container>.toast-info {
+  background-image: none !important;
+
+}

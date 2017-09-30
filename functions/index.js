@@ -23,6 +23,17 @@ function writeVoteData(voteId) {
   });
 }
 
+function writeId(id, options) {
+  return firebase.database().ref(`ids/${id}`).transaction((current_value) => {
+    if (current_value === null) {
+      return [options];
+    } else {
+      current_value[current_value.length] = options;
+      return current_value;
+    }
+  });
+}
+
 const app = express();
 app.engine('hbs', engines.handlebars);
 app.set('views', './views');
@@ -59,11 +70,16 @@ app.get('/api/votes', (request, response) => {
 
 app.post('/api/vote', (request, response) => {
   var votes = request.body.votes;
+  var id = request.body.id;
+
   if (votes.length !== 0) {
     Promise.all(votes.map((voteId) => {
       return writeVoteData(voteId);
-    })).then((res) => {
-        response.json({ status: 'okay', res });
+    })).then(() => {
+      return writeId(id, votes);
+    })
+    .then(() => {
+        response.json({ status: 'okay' });
       });
     } else {
       response.json({ status: 'fail' });
