@@ -3,10 +3,11 @@
 }
 .question-title {
   font-size: 50px;
+  color: lighten($black, 25%);
 }
 .question-subtitle {
   font-size: 20px;
-  color: lighten($gray, 20%);
+  color: lighten($black, 25%);
   max-width: 800px;
   margin: 30px auto;
 }
@@ -31,16 +32,4 @@
       margin-top: 20px;
     }
   }
-}
-
-
-.question-transition {
-  height: 300px;
-  width: 50px;
-  margin: 0 auto;
-  // background: $gradient;
-  // background-image: url("/static/image/artboard-4.png");
-  position: relative;
-  background-size: 100%;
-
 }

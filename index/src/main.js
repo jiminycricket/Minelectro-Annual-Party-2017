@@ -3,6 +3,7 @@ import votes from '../../database/votes.json';
 import chart from './js/service/chart';
 import voteEvent from './js/event/vote.js';
 import waypointBackToTop from './js/waypoint/backToTop';
+import callToAction from './js/waypoint/callToAction';
 import backToTop from './js/service/backToTop';
 const $ = window.$;
 
@@ -18,4 +19,5 @@ $(document).ready(() => {
   voteEvent.init();
   waypointBackToTop.init();
   backToTop.init();
+  callToAction.init();
 })

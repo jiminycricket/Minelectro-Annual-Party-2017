@@ -2,15 +2,16 @@
   background-color: transparent;
   font-size: 30px;
   border-radius: 0;
-  border: 5px solid $white;
+  border: 5px solid $green;
   padding: 20px 50px;
   letter-spacing: 10px;
-  color: $white;
+  color: $green;
   transition: .5s;
   cursor: pointer;
   &:hover, &:focus, &:active {
-    border-color: $yellow;
-    color: $yellow;
+    border-color: darken($green, 10%);
+    color: darken($green, 10%);
+    text-decoration: none;
   }
 }
 

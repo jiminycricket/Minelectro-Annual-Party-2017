@@ -1,5 +1,5 @@
 .intro {
-  color: darken($white, 5%);
+  color: darken($green, 10%);
   h1 {
     font-size: 30px;
     margin-bottom: 50px;
@@ -17,14 +17,15 @@
     }
     .bold {
       font-weight: 400;
-      color: $white;
+      color: $green;
     }
     a {
-      color: lighten($green, 5%);
+      color: darken($orange, 5%);
+      font-weight: 400;
       cursor: pointer;
       transition: .3s;
       &:hover {
-        color: $green;
+        color: $orange;
       }
     }
   }
