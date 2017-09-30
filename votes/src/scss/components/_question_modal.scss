@@ -26,13 +26,14 @@
   padding: 30px 100px;
   box-sizing: content-box;
   line-height: 30px;
-  background: darken($light-green, 15%);
+  background: #f5b451;
   a {
-    color: $yellow;
+    color: $white;
     cursor: pointer;
     transition: .3s;
+    font-weight: 800;
     &:hover {
-      color: darken($yellow, 5%)
+      color: $white;
     }
   }
 }
@@ -55,7 +56,7 @@
 
 .question-intro {
   max-width: 800px;
-  border-top: 3px solid $yellow;
+  border-top: 1px solid $white;
   padding: 50px 30px 20px 30px;
   margin: 0 auto;
   font-size: 20px;
@@ -120,6 +121,24 @@
     &:hover {
       border: 5px solid $yellow;
       color: $yellow;
+    }
+  }
+}
+
+.input-wrapper {
+  h2 {
+    font-size: 30px;
+    margin: 10px;
+  }
+  .input {
+    width: 100%;
+    padding: 20px 20px;
+    font-size: 30px;
+    color: $green;
+    border: 1px solid $light-green;
+    &:focus {
+      border: 1px solid $green;
+      outline: none;
     }
   }
 }

@@ -1,12 +1,13 @@
 const $ = window.$;
 
-export const postVotes = (voteOptions) => {
+export const postVotes = (id, votes) => {
   return new Promise((resolve, reject) => {
     $.ajax({
       method: "POST",
       url: "/app/api/vote",
       data: {
-        votes: voteOptions
+        id,
+        votes,
       },
     }).done((res) => {
       resolve(res);
