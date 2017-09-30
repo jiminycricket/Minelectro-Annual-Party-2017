@@ -1,0 +1,31 @@
+.intro {
+  color: darken($white, 5%);
+  h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  p {
+    font-size: 24px;
+    margin: 50px auto;
+    max-width: 800px;
+    letter-spacing: 1px;
+    line-height: 1.76;
+    font-weight: 100;
+    .big-text {
+      font-size: 34px;
+      margin: 5px;
+    }
+    .bold {
+      font-weight: 400;
+      color: $white;
+    }
+    a {
+      color: lighten($green, 5%);
+      cursor: pointer;
+      transition: .3s;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}

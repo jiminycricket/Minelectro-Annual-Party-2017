@@ -1,0 +1,16 @@
+.back-to-top {
+  position: fixed;
+  right: -100%;
+  border-color: darken($light-green, 5%);
+  color: darken($light-green, 20%);
+  font-size: 20px;
+  background-color: rgba($white, 0.5);
+  bottom: 100px;
+  &.active {
+    right: 100px;
+  }
+  &:hover {
+    border-color: darken($orange, 5%);
+    color: darken($orange, 5%);
+  }
+}

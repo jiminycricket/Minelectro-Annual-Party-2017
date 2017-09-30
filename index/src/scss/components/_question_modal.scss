@@ -1,0 +1,62 @@
+.content-vote {
+  background: linear-gradient(-45deg, $green, $light-green, $orange, $yellow);
+  color: $white;
+  .modal-header, .modal-footer {
+    border: none;
+    text-align: center;
+  }
+  .modal-dialog {
+    width: 90%;
+  }
+
+  .modal-content {
+    background: rgba($white, 0.5);
+  }
+
+  .modal-title {
+    color: $orange;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
+  .content-notice {
+    width: 100%;
+    display: block;
+    color: darken($orange, 10%);
+    font-size: 20px;
+    margin: 30px 0;
+  }
+  .content-vote-wording {
+    max-width: 400px;
+    margin: 0 auto;
+    color: $white;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 30px 50px;
+    box-sizing: content-box;
+    line-height: 30px;
+    background: $light-green;
+    a {
+      color: $green;
+      cursor: pointer;
+      transition: .3s;
+      &:hover {
+        color: darken($green, 5%)
+      }
+    }
+  }
+  .question {
+    .options {
+      margin: 30px 0 70px 0;
+    }
+  }
+
+  .option {
+    transition: .3s;
+    &.active {
+      background: linear-gradient(rgba($green, 0.5), rgba($light-green, 0.5), rgba($orange, 0.5), rgba($yellow, 0.5));
+    }
+    width: 200px;
+  }
+}
+

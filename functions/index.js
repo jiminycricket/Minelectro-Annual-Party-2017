@@ -37,6 +37,14 @@ app.get('/', (request, response) => {
   });
 });
 
+app.get('/votes', (request, response) => {
+  getVotes().then(votes => {
+    response.render('votes', {
+      votes: JSON.stringify(votes)
+    });
+  });
+});
+
 app.get('/api/questions', (request, response) => {
   getQuestions().then(questions => {
     response.json(questions);

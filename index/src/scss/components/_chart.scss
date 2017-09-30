@@ -1,0 +1,66 @@
+.chart {
+  // display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto 90px;
+  // border: 2px solid $white;
+  .option-counter {
+    position: relative;
+    min-width: 50px;
+    height: 40px;
+    margin: 50px 0 10px;
+    display: block;
+    border: 1px solid rgba($white, 0.8);
+    // background-image: url("/static/image/artboard-6.png");
+    span {
+      position: absolute;
+      left: 100%;
+      bottom: 100%;
+      width: 150px;
+      margin-left: -10px;
+
+      margin-bottom: 5px;
+      color: $white;
+      font-size: 16px;
+      letter-spacing: 3px;
+      &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #fff;
+      }
+    }
+
+  }
+}
+
+.statge-1 {
+  .chart .option-counter {
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        background: linear-gradient(-90deg, lighten($green, ($i - 1) * 10%), lighten($green, ($i) * 10%));
+      }
+    }
+  }
+}
+.statge-2 {
+  .chart .option-counter {
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        background: linear-gradient(-90deg, lighten($orange, ($i - 1) * 5%), lighten($orange, ($i) * 5%));
+      }
+    }
+  }
+}
+.statge-3 {
+  .chart .option-counter {
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        background: linear-gradient(-90deg, lighten($yellow, ($i - 1) * 10%), lighten($yellow, ($i) * 10%));
+      }
+    }
+  }
+}
