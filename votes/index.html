@@ -16,7 +16,29 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '121022265248087');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=121022265248087&ev=PageView&noscript=1"
+    /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
+<script>
+  fbq('track', 'Purchase', {value: '1.00', currency: 'TWD'});
+</script>
 
 <body>
   <script>
@@ -66,12 +88,12 @@
         <p class="text-center question-intro">聊到 Daft Punk 經典的 2007 LIVE in coachella，就一定會想到那經典的金字塔造型舞台，因為主舞台是一個派對裡，除了音樂，我們最容易注目的地方，所以這次民生派對2017的主舞台風格，當然是由我們一起決定！我們提供了下列兩種風格供你選擇</p>
         <ul class="options">
           <li class="option" data-vote-question="question_1" data-option-id="option_1_1">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p class="question-subtitle">從缺</p>
+            <img src="./static/image/option_1_1.jpg" alt="option1">
+            <p class="question-subtitle">綠舞台</p>
           </li>
           <li class="option" data-vote-question="question_1" data-option-id="option_1_2">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
-            <p class="question-subtitle">從缺</p>
+            <img src="./static/image/option_1_2.jpg" alt="option1">
+            <p class="question-subtitle">堆疊式舞台</p>
           </li>
         </ul>
       </div>
@@ -82,15 +104,15 @@
 
         <ul class="options">
           <li class="option" data-vote-question="question_2" data-option-id="option_2_1">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <img src="./static/image/option_2_1.jpg" alt="option1">
             <p class="question-subtitle">倉庫風</p>
           </li>
           <li class="option" data-vote-question="question_2" data-option-id="option_2_2">
-            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <img src="./static/image/option_2_2.jpg" alt="option2">
             <p class="question-subtitle">和室風</p>
           </li>
           <li class="option" data-vote-question="question_2" data-option-id="option_2_3">
-            <img src="http://via.placeholder.com/350x350" alt="option3">
+            <img src="./static/image/option_2_3.jpg" alt="option3">
             <p class="question-subtitle">里民中心風（我們真的會給你里民中心）</p>
           </li>
         </ul>
@@ -101,19 +123,19 @@
 
         <ul class="options options-two-layer">
           <li class="option" data-vote-question="question_3" data-option-id="option_3_1">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <img src="./static/image/option_3_1.jpg" alt="option1">
             <p class="question-subtitle">扭蛋機<br>內含各種派對小驚喜，轉了絕對物超所值</p>
           </li>
           <li class="option" data-vote-question="question_3" data-option-id="option_3_2">
-            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <img src="./static/image/option_3_2.jpg" alt="option2">
             <p class="question-subtitle">乒乓桌<br>當然不是一般的桌子，玩了會上癮的那種</p>
           </li>
           <li class="option" data-vote-question="question_3" data-option-id="option_3_3">
-            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <img src="./static/image/option_3_3.jpg" alt="option2">
             <p class="question-subtitle">飛鏢機<br>百發百中派對神射手，不用到酒吧就能玩</p>
           </li>
           <li class="option" data-vote-question="question_3" data-option-id="option_3_4">
-            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <img src="./static/image/option_3_4.jpg" alt="option2">
             <p class="question-subtitle">樂透機<br>休息一下買個好運氣，各種大獎定時抽出</p>
           </li>
         </ul>
@@ -124,15 +146,15 @@
 
         <ul class="options">
           <li class="option" data-vote-question="question_4" data-option-id="option_4_1">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <img src="./static/image/option_4_1.jpg" alt="option1">
             <p class="question-subtitle">一罐 100</p>
           </li>
           <li class="option" data-vote-question="question_4" data-option-id="option_4_2">
-            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <img src="./static/image/option_4_2.jpg" alt="option2">
             <p class="question-subtitle">一罐 120</p>
           </li>
           <li class="option" data-vote-question="question_4" data-option-id="option_4_3">
-            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <img src="./static/image/option_4_3.jpg" alt="option2">
             <p class="question-subtitle">一罐 150</p>
           </li>
         </ul>
@@ -143,15 +165,15 @@
 
         <ul class="options">
           <li class="option" data-vote-question="question_5" data-option-id="option_5_1">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <img src="./static/image/option_5_1.jpg" alt="option1">
             <p class="question-subtitle">800 元</p>
           </li>
           <li class="option" data-vote-question="question_5" data-option-id="option_5_2">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <img src="./static/image/option_5_2.jpg" alt="option1">
             <p class="question-subtitle">1000 元</p>
           </li>
           <li class="option" data-vote-question="question_5" data-option-id="option_5_3">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <img src="./static/image/option_5_3.jpg" alt="option1">
             <p class="question-subtitle">1200 元</p>
           </li>
         </ul>
@@ -162,15 +184,15 @@
 
         <ul class="options">
           <li class="option" data-vote-question="question_6" data-option-id="option_6_1">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <img src="./static/image/option_6_1.jpg" alt="option1">
             <p class="question-subtitle">主派對活動加開第二天<br> (12/1 星期五)</p>
           </li>
           <li class="option" data-vote-question="question_6" data-option-id="option_6_2">
-            <img src="http://via.placeholder.com/350x350" alt="option2">
+            <img src="./static/image/option_6_2.jpg" alt="option2">
             <p class="question-subtitle">主派對活動加開第二天<br> (12/3 星期日)</p>
           </li>
           <li class="option" data-vote-question="question_6" data-option-id="option_6_3">
-            <img src="http://via.placeholder.com/350x350" alt="option1">
+            <img src="./static/image/option_6_3.jpg" alt="option1">
             <p class="question-subtitle">所有購票者加贈酒水一份</p>
           </li>
         </ul>
@@ -199,7 +221,7 @@
           <footer>
             <div class="flex text-center logo">
               <span></span>
-              <img src="./static/image/wording-6.svg" alt="">
+              <img src="../static/image/wording-6.svg" alt="">
               <span></span>
             </div>
             <div class="links">
@@ -221,7 +243,6 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-107298467-1');
-
   </script>
   <!-- built files will be auto injected -->
 </body>

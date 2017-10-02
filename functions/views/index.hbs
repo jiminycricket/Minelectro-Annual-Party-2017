@@ -15,7 +15,28 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<link href="/app/static/css/app.8223ba23125f8ed4e521f416db852f12.css" rel="stylesheet"></head>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '121022265248087');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=121022265248087&ev=PageView&noscript=1"></noscript>
+  <!-- End Facebook Pixel Code -->
+<link href="/app/static/css/app.fb22d292e527951d32a108eddea85bdc.css" rel="stylesheet"></head>
+<script>
+    fbq('track', 'ViewContent');
+</script>
 
 <body>
   <script>
@@ -104,16 +125,16 @@
             <ul class="options">
               <li class="option" data-option-id="option_1_1">
                 <img src="./static/image/option_1_1.jpg">
-                <p class="question-subtitle">從缺</p>
+                <p class="question-subtitle">綠舞台</p>
               </li>
               <li class="option" data-option-id="option_1_2">
                 <img src="./static/image/option_1_2.jpg">
-                <p class="question-subtitle">從缺</p>
+                <p class="question-subtitle">堆疊式舞台</p>
               </li>
             </ul>
             <div class="chart" data-question="question_1">
-              <div class="option-counter" data-option-id="option_1_1"><span>從缺</span></div>
-              <div class="option-counter" data-option-id="option_1_2"><span>從缺</span></div>
+              <div class="option-counter" data-option-id="option_1_1"><span>綠舞台</span></div>
+              <div class="option-counter" data-option-id="option_1_2"><span>堆疊式舞台</span></div>
             </div>
           </div>
           <div class="question">
