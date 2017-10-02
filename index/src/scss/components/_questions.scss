@@ -5,6 +5,19 @@
   font-size: 50px;
   color: lighten($black, 25%);
 }
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    margin: 0 10px;
+  }
+  span {
+    flex: 1;
+    height: 2px;
+    border-bottom: 1px solid $green;
+  }
+}
 .question-subtitle {
   font-size: 20px;
   color: lighten($black, 25%);
@@ -19,6 +32,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  &.options-two-layer {
+    max-width: 900px;
+    margin: 0 auto;
+  }
   li {
     background: rgba(white, 0.3);
     box-sizing: border-box;
