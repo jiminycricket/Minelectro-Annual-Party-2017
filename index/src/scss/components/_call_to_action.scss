@@ -1,7 +1,7 @@
 .call-to-action {
   position: fixed;
   bottom: 50px;
-  right: -100%;
+  right: -1000px;
   padding: 20px;
   background-color: rgba($white, 1);
   height: 100px;
@@ -10,9 +10,17 @@
   align-items: center;
   opacity: 0.6;
   transition: .3s;
+  @include media("s") {
+    bottom: 0;
+    width: 100%;
+  }
+
   .btn-square {
     text-align: center;
     padding: 10px 20px;
+    @include media("s") {
+      font-size: 16px;
+    }
   }
   &.active {
     right: 0

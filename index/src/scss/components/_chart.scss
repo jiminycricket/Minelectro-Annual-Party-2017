@@ -1,5 +1,5 @@
 .chart {
-  // display: flex;
+  display: flex;
   width: 100%;
   max-width: 800px;
   margin: 30px auto 90px;
@@ -14,7 +14,7 @@
     // background-image: url("/static/image/artboard-6.png");
     span {
       position: absolute;
-      left: 100%;
+      left: 50%;
       bottom: 100%;
       width: 150px;
       margin-left: -10px;

@@ -126,6 +126,10 @@
   flex-wrap: wrap;
   justify-content: center;
   cursor: pointer;
+  &.options-two-layer {
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
   .option {
     transition: .3s;
@@ -136,6 +140,7 @@
     margin: 10px 20px;
     width: 350px;
     border: 1px solid lighten($green, 10%);
+
     &.active {
       background: linear-gradient(0deg, rgba($orange, 0.7), rgba($yellow, 1));
       border: none;

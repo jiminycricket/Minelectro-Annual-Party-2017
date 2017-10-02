@@ -8,6 +8,11 @@
   color: $green;
   transition: .5s;
   cursor: pointer;
+  @include media("s") {
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+  }
   &:hover, &:focus, &:active {
     border-color: darken($green, 10%);
     color: darken($green, 10%);

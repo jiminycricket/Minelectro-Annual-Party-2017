@@ -10,6 +10,9 @@
   color: lighten($black, 25%);
   max-width: 800px;
   margin: 30px auto;
+  @include media("s") {
+    font-size: 16px;
+  }
 }
 .options {
   padding: 0;
