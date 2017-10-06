@@ -18,8 +18,10 @@ const init = () => {
 
 const validation = () => {
   // 序號
-  if (!$('.input').val()) {
-    toastr.info('未填入或錯誤： flyingV 金流單號');
+  var value = $('.input').val();
+
+  if (!value || value.toString().length !== 6 || isNaN(Number(value))) {
+    toastr.info('未填入或錯誤：金流單號，早鳥盲鳥票序號');
     return false
   }
 
