@@ -4,7 +4,31 @@
   }
 
   to {
-    transform: translateY(500px);
+    transform: translateY(100px);
+  }
+}
+@keyframes float-opacity {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+
+  100% {
+    transform: translateY(300px);
+  }
+}
+@keyframes shining {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
@@ -27,13 +51,17 @@
     transform: rotate(360deg);
   }
 }
-@keyframes x {
+@keyframes d5 {
   0% {
-    left: -100%;
+    transform: rotate(0deg) translateX(0);
+  }
+
+  50% {
+    transform: rotate(180deg) translateX(50px);
   }
 
   100% {
-    left: 100%;
+    transform: rotate(360deg) translateX(0px);
   }
 }
 @keyframes y {
@@ -67,6 +95,9 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+  @include media("s") {
+    display: none;
+  }
 
 }
 .decorate-2 {
@@ -80,33 +111,249 @@
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-timing-function: linear;
+  @include media("s") {
+    bottom: 0;
+    opacity: 0.3;
+    animation-duration: 10s;
+  }
 }
 
 .decorate-3 {
   opacity: 0.5;
   position: absolute;
   right: 50px;
-  width: 300px;
+  width: 150px;
+  height: 300px;
   z-index: -1;
-  // animation-name: x;
-  // animation-duration: 8s;
-  // animation-delay: 3s;
-  // animation-iteration-count: infinite;
-  // animation-direction: normal;
-  // animation-timing-function: linear;
+  @include media("s") {
+    top: 50px;
+    width: 200px;
+    right: -100px;
+  }
 }
 
 .decorate-4 {
-  opacity: 1;
   position: absolute;
-  left: 50%;
-  width: 300px;
-  z-index: -1;
-  // animation-name: ys;
+  left: 50px;
+  bottom: 100px;
+  width: 200px;
+  height: 200px;
+  @include media("s") {
+    display: none;
+  }
+}
+
+.decorate-5 {
+  position: absolute;
+  right: 50%;
+  bottom: 0%;
+  width: 600px;
+  opacity: 0.5;
+  animation-name: d5;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  @include media("s") {
+   display: none;
+  }
+}
+.decorate-6 {
+  position: absolute;
+  right: 10%;
+  top: -200px;
+  width: 600px;
+  opacity: 0.5;
+  animation-name: d5;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  @include media("s") {
+    animation-duration: 5s;
+    right: -100%;
+    opacity: 0.3;
+  }
+}
+.decorate-7 {
+  position: absolute;
+  right: 50%;
+  bottom: 200px;
+  opacity: 0.3;
+  width: 200px;
+  margin-right: -300px;
+  transform: rotate(90deg) translateX(50%);
+  animation-name: shining;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  @include media("s") {
+    display: none;
+  }
+}
+
+.decorate-8 {
+  position: absolute;
+  right: 75%;
+  bottom: 200px;
+  opacity: 0.3;
+  width: 200px;
+  margin-right: -100px;
+  transform: translateX(50%);
+  animation-name: float-opacity;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: no;
+  animation-timing-function: linear;
+}
+
+.decorate-9 {
+  position: absolute;
+  left: 75%;
+  bottom: 200px;
+  opacity: 0.3;
+  width: 150px;
+  margin-right: -300px;
+  transform: translateX(50%);
+  animation-name: float-opacity;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.decorate-10 {
+  position: absolute;
+  left: 0px;
+  top: -100px;
+  opacity: 1;
+  width: 150px;
+  transform: translateX(50%);
+  // @include media("s") {
+  //   display: none;
+  // }
+
+}
+.decorate-11 {
+  position: absolute;
+  right: 300px;
+  bottom: 100px;
+  opacity: 0.9;
+  width: 75px;
+  transform: translateX(50%);
+}
+
+.decorate-15 {
+  position: absolute;
+  left: 10%;
+  bottom: 0px;
+  opacity: 1;
+  width: 200px;
+  // transform: translateX(50%);
+}
+
+.decorate-16 {
+  position: absolute;
+  right: 40%;
+  bottom: 50%;
+  opacity: 0.9;
+  width: 150px;
+  transform: translateX(100%) translateY(100%);
+}
+
+.decorate-12 {
+  position: absolute;
+  width: 100%;
+  right: 300px;
+  bottom: 300px;
+
+}
+.decorate-13 {
+  position: absolute;
+  width: 300;
+  right: 300px;
+  bottom: 450px;
+  animation-name: shining;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.decorate-14 {
+  position: absolute;
+  width: 300;
+  right: 300px;
+  top: 450px;
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: no;
+  animation-timing-function: linear;
+}
+.decorate-17 {
+  position: absolute;
+  width: 300;
+  left: 100px;
+  bottom: 450px;
+  // animation-name: rotate;
   // animation-duration: 3s;
   // animation-iteration-count: infinite;
-  // animation-direction: alternate;
-  // animation-timing-function: ease-in-out;
+  // animation-direction: no;
+  // animation-timing-function: linear;
+}
+.decorate-18 {
+  position: absolute;
+  width: 300;
+  right: 300px;
+  top: 450px;
+  // animation-name: rotate;
+  // animation-duration: 3s;
+  // animation-iteration-count: infinite;
+  // animation-direction: no;
+  // animation-timing-function: linear;
+}
+.decorate-19 {
+  position: absolute;
+  width: 200px;
+  left: 0;
+  bottom: 0;
+  // animation-name: rotate;
+  // animation-duration: 3s;
+  // animation-iteration-count: infinite;
+  // animation-direction: no;
+  // animation-timing-function: linear;
+}
+.decorate-20 {
+  position: absolute;
+  width: 200px;
+  left: 30%;
+  height: 200px;
+  top: -150px;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: float;
+}
+.decorate-21 {
+  position: absolute;
+  width: 200px;
+  right: 0;
+  height: 200px;
+  bottom: -50px;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: float;
+}
+
+.decorate-22 {
+  position: absolute;
+  width: 200px;
+  right: -50px;
+  bottom: 150px;
 }
 
 
@@ -202,5 +449,24 @@
         width: 200px;
       }
     }
+  }
+}
+
+.scene {
+  // overflow-x: hidden;
+  // overflow-y: visible;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  &.fixed {
+    position: fixed;
+  }
+  div {
+    width: 100%;
+    height: 100%;
+    position: relative;
   }
 }

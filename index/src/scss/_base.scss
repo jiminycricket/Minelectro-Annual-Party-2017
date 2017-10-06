@@ -16,6 +16,7 @@ a {
 .background-wrapper {
   opacity: 1;
 }
+
 .background {
   position: fixed;
   top: 0;
@@ -25,11 +26,42 @@ a {
   background: linear-gradient($green, $light-green, $orange, $yellow);
 }
 
+@keyframes bg {
+  0% {
+    transform: translateY(0%);
+  }
+  15% {
+    transform: translateY(-20%);
+  }
+  30% {
+    transform: translateY(-20%);
+  }
+  45% {
+    transform: translateY(-25%);
+  }
+  60% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(20%);
+  }
+  90% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 @for $i from 1 through 20 {
   .background-#{$i} {
-    left: ($i - 1) * 5%;
     height: 300% - (($i - 1) * 10%);
     top: -100% + (($i - 1) * 5%);
+    left: ($i - 1) * 5%;
+    &.active {
+      animation-name: bg;
+      animation-duration: 1s;
+      animation-delay: .05s * $i;
+    }
   }
 }
 
