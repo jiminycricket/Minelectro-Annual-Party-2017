@@ -18,9 +18,12 @@
     "deploy": "firebase deploy --only  functions"
   },
   "dependencies": {
+    "install": "^0.10.1",
     "jquery": "^3.2.1",
     "jquery.scrollto": "^2.1.2",
     "minimist": "^1.2.0",
+    "npm": "^5.4.2",
+    "vivus": "^0.4.2",
     "vue": "^2.4.2",
     "vue-router": "^2.7.0",
     "waypoints": "^4.0.1"

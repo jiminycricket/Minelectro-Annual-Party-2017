@@ -22,4 +22,8 @@ $(document).ready(() => {
   backToTop.init();
   callToAction.init();
   ga.init();
+  $(".top-cover").addClass("end");
+  setTimeout(function() {
+    $(".top-cover").remove();
+  }, 2000);
 })
