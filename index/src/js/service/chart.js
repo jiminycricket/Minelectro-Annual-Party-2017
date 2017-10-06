@@ -16,6 +16,5 @@ export default {
         width: `${window.votes[optionId] * 100 / total}%`
       });
     })
-    console.log(total);
   }
 };

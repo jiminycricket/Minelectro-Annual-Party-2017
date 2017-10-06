@@ -4,9 +4,9 @@ import { postVotes } from '../service/api';
 const $ = window.$;
 
 const init = () => {
-  $('#successModal').on('show.bs.modal', (e) => {
-    console.log('!!!!!!');
-  });
+  // $('#successModal').on('show.bs.modal', (e) => {
+  //   console.log('!!!!!!');
+  // });
 };
 
 export const toggleSuccessModal = () => {

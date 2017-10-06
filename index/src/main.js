@@ -5,6 +5,7 @@ import voteEvent from './js/event/vote.js';
 import waypointBackToTop from './js/waypoint/backToTop';
 import callToAction from './js/waypoint/callToAction';
 import backToTop from './js/service/backToTop';
+import ga from './js/event/ga';
 const $ = window.$;
 
 window.votes = window.votes ? JSON.parse(window.votes) : votes;
@@ -20,4 +21,5 @@ $(document).ready(() => {
   waypointBackToTop.init();
   backToTop.init();
   callToAction.init();
+  ga.init();
 })

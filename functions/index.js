@@ -49,11 +49,11 @@ app.get('/', (request, response) => {
 });
 
 app.get('/votes', (request, response) => {
-  getVotes().then(votes => {
-    response.render('votes', {
-      votes: JSON.stringify(votes)
-    });
-  });
+  response.render('votes');
+});
+
+app.get('/share', (request, response) => {
+  response.render('share');
 });
 
 app.get('/api/questions', (request, response) => {

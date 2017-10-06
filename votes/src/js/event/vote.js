@@ -5,6 +5,8 @@ const $ = window.$;
 const singleSelect = ["question_1", "question_2", "question_4", "question_5", "question_6"];
 const fourSlectTwo = ["question_3"];
 const init = () => {
+  // toggleSuccessModal();
+
   singleSelect.forEach((question) => {
     optionSingleEvent(question);
   });

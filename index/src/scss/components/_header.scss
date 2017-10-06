@@ -13,6 +13,9 @@ header {
     max-width: 1440px;
     position: relative
   }
+  @include media("s") {
+    min-height: 600px;
+  }
 }
 
 .wording-2 {
@@ -21,6 +24,7 @@ header {
   width: 50px;
   @include media("s") {
     margin: 50px 0 0;
+    width: 40px;
   }
 }
 
@@ -73,6 +77,7 @@ header {
   height: 80vh;
   @include media("s") {
     margin: 0 0 0 20px;
+    width: 50px;
   }
   img {
     width: 100%;

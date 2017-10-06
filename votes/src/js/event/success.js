@@ -4,8 +4,8 @@ import { postVotes } from '../service/api';
 const $ = window.$;
 
 const init = () => {
-  $('#successModal').on('show.bs.modal', (e) => {
-    console.log('!!!!!!');
+  $('#successModal').on('shown.bs.modal', (e) => {
+    gtag('event', '投票成功');
   });
 };
 

@@ -1,4 +1,5 @@
 .intro {
+  position: relative;
   color: darken($green, 10%);
   @include media("s") {
     padding: 10px;

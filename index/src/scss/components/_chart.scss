@@ -12,29 +12,54 @@
     display: block;
     border: 1px solid rgba($white, 0.8);
     // background-image: url("/static/image/artboard-6.png");
-    span {
-      position: absolute;
-      left: 50%;
-      bottom: 100%;
-      width: 150px;
-      margin-left: -10px;
+    &:nth-child(even) {
+      span {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        width: 150px;
+        margin-left: -10px;
 
-      margin-bottom: 5px;
-      color: $green;
-      font-size: 16px;
-      letter-spacing: 3px;
-
-      &:after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-top: 10px solid $green;
+        margin-top: 5px;
+        color: $green;
+        font-size: 16px;
+        letter-spacing: 3px;
+        &:before {
+          content: '';
+          display: block;
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid $green;
+        }
       }
     }
+    &:nth-child(odd) {
+      span {
+        position: absolute;
+        left: 50%;
+        bottom: 100%;
+        width: 150px;
+        margin-left: -10px;
 
+        margin-bottom: 5px;
+        color: $green;
+        font-size: 16px;
+        letter-spacing: 3px;
+
+
+        &:after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid $green;
+        }
+      }
+    }
   }
 }
 
